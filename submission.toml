@@ -1,0 +1,13 @@
+# Please provide running instructions with examples
+instructions = "In terminal, navigate to its directory and run influence.py while passing in the appropriate inputs by: python influence.py "graph_file_name.txt" deadline. Example: python influence.py "facebook_small.txt" 5
+"""
+
+[[student]]
+name = "Ryan Do"
+utor = "doryan"
+nmbr = "1001254117"
+
+[[student]]
+name = "Munef Agag"
+utor = "agagmune"
+nmbr = "1000973707"
