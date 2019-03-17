@@ -50,7 +50,7 @@ def dijkstra(adj_list, source):
 
 def compute_top_one_influencer(adj_list, T):
     # argument: nested dictionary adjacency list directed graph with weights representing time to influence, deadline T (float)
-    # return: top 1 influencer node num (int), spread (int), runtime (float), influencees (list)
+    # return: top 1 influencer node num (int), spread (int), runtime (float), influencees (list). In the case of a tie, the smaller influencer node number is returned.
 
     start_time = dt.datetime.now()
 
@@ -69,6 +69,7 @@ def compute_top_one_influencer(adj_list, T):
 def compute_top_two_influencer(adj_list, T, top_1_influencees):
     # argument: nested dictionary adjacency list directed graph with weights representing time to influence, deadline T (float), list of nodes influenced by top 1
     # return:  node with max marginal spread gain (int), marginal spread (int), spread (int), runtime (float), influencees (list), marginal_influencees (list)
+    # In the case of a tie, the smaller influencer node number is returned.
 
     start_time = dt.datetime.now()
 
